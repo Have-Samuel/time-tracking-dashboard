@@ -19,3 +19,9 @@ body {
   height: 100vh;
   background-color: #0e1323;
 }
+
+.person {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
