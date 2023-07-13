@@ -8,14 +8,14 @@
 }
 
 body {
-  background-color: #0e1323;
-  width: 375px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
   width: 375px;
-  /* height: 100vh; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 100vh;
+  background-color: #0e1323;
 }
