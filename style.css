@@ -31,11 +31,12 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+  gap: 2rem;
 }
 
 .person__image img {
-  width: 50px;
-  height: 50px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   border: 1px solid #fff;
 }
