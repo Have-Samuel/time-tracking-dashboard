@@ -17,14 +17,17 @@ body {
 .container {
   width: 375px;
   height: 100vh;
+  margin: 1rem;
 
   /* height: 935px; */
   background-color: #0e1323;
+  display: flex;
+  justify-content: center;
 }
 
 .person {
   width: 327px;
-  margin: 0 auto;
+  margin-top: 4rem;
   background-color: #5747ea;
   height: 133px;
   display: flex;
@@ -61,5 +64,5 @@ body {
 .person__name h1 {
   color: #fff;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
 }
