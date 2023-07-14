@@ -31,7 +31,13 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  gap: 2rem;
+}
+
+.person-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
 }
 
 .person__image img {
@@ -48,12 +54,12 @@ body {
 
 .person__name span {
   color: #bbc0ff;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 200;
 }
 
 .person__name h1 {
   color: #fff;
-  font-size: 13px;
-  font-weight: 300;
+  font-size: 16px;
+  font-weight: 400;
 }
