@@ -17,6 +17,8 @@ body {
 .container {
   width: 375px;
   height: 100vh;
+
+  /* height: 935px; */
   background-color: #0e1323;
 }
 
@@ -36,4 +38,21 @@ body {
   height: 50px;
   border-radius: 50%;
   border: 1px solid #fff;
+}
+
+.person__name {
+  width: 137px;
+  height: 50px;
+}
+
+.person__name span {
+  color: #bbc0ff;
+  font-size: 10px;
+  font-weight: 200;
+}
+
+.person__name h1 {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 300;
 }
