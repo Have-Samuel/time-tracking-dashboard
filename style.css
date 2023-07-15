@@ -109,7 +109,17 @@ body {
 }
 
 .play-card {
-  background-color: #d96c47;
+  background-color: #ff8b64;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.play-card1 {
+  background-color: #55c2e6;
   border-radius: 10px;
   display: flex;
   align-items: center;
