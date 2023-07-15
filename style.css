@@ -108,9 +108,11 @@ body {
   color: #7078c9;
   font-size: 12px;
   font-weight: 200;
+  cursor: pointer;
 }
 
 .da-we-mo span:hover {
-  cursor: pointer;
   color: aliceblue;
+  transition: 0.6s ease-in-out;
+  transform: rotate(45deg);
 }
