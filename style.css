@@ -120,25 +120,16 @@ body {
 .play-card {
   width: 327px;
   height: 160px;
+
   /* background-color: #1c204b; */
   background-color: #d96c47;
   border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   margin-bottom: 1rem;
 }
 
 .image-show {
   width: 327px;
-  height: 58px;
-  /* background-color: #1c204b; */
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  height: 32px;
   margin-bottom: 1rem;
   position: relative;
 }
@@ -148,5 +139,15 @@ body {
   position: absolute;
   top: -10px;
   right: 15px;
-  clip: rect(9px, 327px, 58px, 0);
+  clip: rect(10px, 327px, 58px, 0);
+}
+
+.content {
+  /* width: 327px; */
+  height: 122px;
+  background-color: #1c204b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
 }
