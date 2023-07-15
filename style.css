@@ -109,3 +109,8 @@ body {
   font-size: 12px;
   font-weight: 200;
 }
+
+.da-we-mo span:hover {
+  cursor: pointer;
+  color: aliceblue;
+}
