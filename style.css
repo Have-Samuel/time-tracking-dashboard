@@ -112,18 +112,17 @@ body {
 }
 
 .play-card {
-  width: 327px;
-  height: 160px;
-
-  /* background-color: #1c204b; */
   background-color: #d96c47;
   border-radius: 10px;
-  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .image-show {
   width: 327px;
-  height: 28px;
+  height: 29px;
   margin-bottom: 1rem;
   position: relative;
 }
@@ -137,36 +136,47 @@ body {
 }
 
 .content {
+  width: 327px;
   height: 122px;
   background-color: #1c204b;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5rem;
+  gap: 6rem;
   border-radius: 10px;
 }
 
 .work-hours h2 {
   color: #fff;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 400;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.three-dots span {
+  color: #bbc0ff;
+  font-size: 12px;
+  font-weight: 200;
+  margin-left: 1.9rem;
 }
 
 .work-hours .hours span {
   color: #fff;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 200;
   cursor: pointer;
 }
 
 .three-dots {
-  /* display: flex; */
-  gap: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.three-dots img {
-  
+.three-dots .dot {
+  margin-left: 6.2rem;
 }
 
 .da-we-mo span:hover {
