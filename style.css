@@ -116,3 +116,39 @@ body {
   transition: 0.6s ease-in-out;
   transform: rotate(45deg);
 }
+
+.play-card {
+  width: 327px;
+  height: 160px;
+  background-color: #1c204b;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.image-show {
+  width: 327px;
+  height: 78px;
+  background-color: #d96c47;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.image-show img {
+  /* width: 327px;
+  height: 78px; */
+  /* filter: invert(10%); */
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+  border-radius: 10px;
+  position: absolute;
+  top: -10px;
+  right: 20px;
+}
