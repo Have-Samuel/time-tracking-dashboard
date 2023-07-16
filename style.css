@@ -69,7 +69,6 @@ body {
   align-items: center;
   justify-content: center;
   gap: 4rem;
-  margin-bottom: 1rem;
   width: 327px;
   background-color: #1c204b;
   border-radius: 0 0 10px 10px;
@@ -148,6 +147,16 @@ body {
 
 .play-card4 {
   background-color: #5a1cbb;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.play-card5 {
+  background-color: #f1c75b;
   border-radius: 10px;
   display: flex;
   align-items: center;
