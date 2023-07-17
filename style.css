@@ -40,9 +40,9 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  /* gap: 1.5rem;
+  gap: 1.5rem;
   height: 133px;
-  margin-bottom: 3rem; */
+  margin-bottom: 3rem;
 }
 
 .person__image img {
