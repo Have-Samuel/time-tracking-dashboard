@@ -28,16 +28,16 @@ body {
   margin-top: 4rem;
   background-color: #5747ea;
   /* height: 123px; */
-  display: flex;
+  /* display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: column; */
   border-radius: 10px;
 }
 
 .person-data {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   /* justify-content: center; */
   flex-direction: column;
   /* gap: 1.5rem;
