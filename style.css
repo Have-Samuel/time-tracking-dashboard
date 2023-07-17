@@ -28,8 +28,8 @@ body {
   margin-top: 4rem;
   background-color: #5747ea;
   /* height: 123px; */
-  /* display: flex;
-  align-items: center;
+  display: flex;
+  /* align-items: center;
   justify-content: center;
   flex-direction: column; */
   border-radius: 10px;
@@ -37,8 +37,8 @@ body {
 
 .person-data {
   display: flex;
-  /* align-items: center; */
-  /* justify-content: center; */
+  align-items: center;
+  /* justify-content: flex-start; */
   flex-direction: column;
   /* gap: 1.5rem;
   height: 133px;
