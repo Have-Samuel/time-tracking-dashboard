@@ -242,9 +242,25 @@ body {
     margin: 1rem;
     background-color: #0e1323;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
+  }
+
+  .desktop-data {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     gap: 1rem;
-    padding: 1rem;
+    margin-top: 1rem;
+    margin-left: 23rem;
+  }
+
+  .person {
+    background-color: #5747ea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
   }
 }
