@@ -327,7 +327,7 @@ body {
   .content {
     width: 255px;
     height: 160px;
-    gap: 0;
+    gap: 2rem;
   }
 
   .play-card {
@@ -354,23 +354,31 @@ body {
     margin-top: 0;
   }
 
-  .work-hours {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    /* gap: 1rem; */
-  }
-
   .work-hours h2 {
     margin-top: -2rem;
-    margin-left: 1rem;
+  }
+
+  .three-dots {
+    position: relative;
+  }
+
+  .three-dots span {
+    position: absolute;
+    top: 6rem;
+    right: 5rem;
+    width: 100px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .work-hours .hours span {
     margin-bottom: 4rem;
     font-size: 3rem;
     font-weight: 300;
-    margin-left: 1rem;
+  }
+
+  .three-dots .dot {
+    margin-left: 3rem;
+    margin-bottom: 5rem;
   }
 }
