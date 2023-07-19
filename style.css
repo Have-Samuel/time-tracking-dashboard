@@ -239,11 +239,11 @@ body {
   .container {
     width: 1440px;
     height: 98vh;
-    margin: 1rem;
     background-color: #0e1323;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    position: relative;
   }
 
   .desktop-data {
@@ -251,16 +251,16 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 1rem;
-    margin-top: 1rem;
-    margin-left: 23rem;
+    position: absolute;
+    top: 12rem;
+    left: 23rem;
   }
 
   .person {
-    background-color: #5747ea;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 10px;
+    width: 255px;
+    height: 518px;
+    position: absolute;
+    top: 9rem;
+    left: 6rem;
   }
 }
