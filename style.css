@@ -32,7 +32,6 @@ body {
   justify-content: center;
   flex-direction: column;
   border-radius: 10px;
-  /* width: 327px; */
 }
 
 .person-data {
@@ -45,9 +44,9 @@ body {
 .content-inner {
   display: flex;
   align-items: center;
-  /* justify-content: center;
-  flex-direction: column; */
   width: 256px;
+  height: 122px;
+  gap: 1.5rem;
 }
 
 .person__image img {
