@@ -327,6 +327,7 @@ body {
   .content {
     width: 255px;
     height: 160px;
+    gap: 0;
   }
 
   .play-card {
@@ -351,5 +352,25 @@ body {
 
   .play-card5 {
     margin-top: 0;
+  }
+
+  .work-hours {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    /* gap: 1rem; */
+  }
+
+  .work-hours h2 {
+    margin-top: -2rem;
+    margin-left: 1rem;
+  }
+
+  .work-hours .hours span {
+    margin-bottom: 4rem;
+    font-size: 3rem;
+    font-weight: 300;
+    margin-left: 1rem;
   }
 }
