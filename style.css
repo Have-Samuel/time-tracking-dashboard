@@ -263,4 +263,10 @@ body {
     top: 9rem;
     left: 6rem;
   }
+
+  .content-inner {
+    flex-direction: column;
+    margin-right: 7rem;
+    margin-top: -14rem;
+  }
 }
