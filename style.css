@@ -27,8 +27,8 @@ body {
 .person {
   margin-top: 4rem;
   background-color: #5747ea;
-  display: flex;
-  /* align-items: center;
+  /* display: flex;
+  align-items: center;
   justify-content: center;
   flex-direction: column; */
   border-radius: 10px;
@@ -37,12 +37,8 @@ body {
 .person-data {
   display: flex;
   align-items: center;
-  /* justify-content: flex-start; */
+  justify-content: flex-start;
   flex-direction: column;
-  /* gap: 1.5rem;
-  height: 133px;
-  margin-bottom: 3rem; */
-  /* gap: 4rem; */
 }
 
 .person__image img {
