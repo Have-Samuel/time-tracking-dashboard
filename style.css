@@ -254,14 +254,16 @@ body {
     position: absolute;
     top: 12rem;
     left: 23rem;
+    margin-left: 6rem;
   }
 
   .person {
     width: 255px;
-    height: 335px;
+    height: 315px;
     position: absolute;
     top: 9rem;
     left: 6rem;
+    margin-left: 6rem;
   }
 
   .content-inner {
@@ -293,7 +295,7 @@ body {
     width: 255px;
     height: 142px;
     position: absolute;
-    top: 21rem;
+    top: 19rem;
     left: 0;
     gap: 0;
   }
@@ -305,5 +307,24 @@ body {
     cursor: pointer;
     margin-left: 20px;
     margin-top: 0;
+  }
+
+  .image-show {
+    width: 255px;
+    height: 29px;
+    position: relative;
+  }
+
+  .image-show img {
+    filter: invert(18%);
+    position: absolute;
+    top: -10px;
+    right: 15px;
+    clip: rect(10px, 327px, 54px, 0);
+  }
+
+  .content {
+    width: 255px;
+    height: 160px;
   }
 }
