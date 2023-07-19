@@ -255,6 +255,7 @@ body {
     top: 12rem;
     left: 23rem;
     margin-left: 6rem;
+    margin-top: 0;
   }
 
   .person {
@@ -269,7 +270,7 @@ body {
   .content-inner {
     flex-direction: column;
     margin-right: 7rem;
-    margin-bottom: 9rem;
+    margin-bottom: 2rem;
   }
 
   .person__name {
