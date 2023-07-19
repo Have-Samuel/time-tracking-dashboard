@@ -258,7 +258,7 @@ body {
 
   .person {
     width: 255px;
-    height: 518px;
+    height: 335px;
     position: absolute;
     top: 9rem;
     left: 6rem;
@@ -267,6 +267,43 @@ body {
   .content-inner {
     flex-direction: column;
     margin-right: 7rem;
-    margin-top: -14rem;
+    margin-bottom: 9rem;
+  }
+
+  .person__name {
+    width: 139px;
+  }
+
+  .person__name span {
+    margin-left: 2rem;
+  }
+
+  .person__name h1 {
+    margin-left: 2rem;
+    font-size: 23px;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+  }
+
+  .da-we-mo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 255px;
+    height: 142px;
+    position: absolute;
+    top: 21rem;
+    left: 0;
+    gap: 0;
+  }
+
+  .da-we-mo span {
+    color: #7078c9;
+    font-size: 12px;
+    font-weight: 200;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 0;
   }
 }
