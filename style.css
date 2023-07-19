@@ -45,7 +45,7 @@ body {
   /* gap: 4rem; */
 }
 
-.person__image {
+.person__image img {
   width: 90px;
   height: 90px;
   border-radius: 50%;
