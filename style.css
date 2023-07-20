@@ -312,7 +312,7 @@ body {
 
   .image-show {
     width: 255px;
-    height: 29px;
+    height: 28px;
     position: relative;
   }
 
@@ -356,6 +356,7 @@ body {
 
   .work-hours h2 {
     margin-top: -2rem;
+    margin-left: 1rem;
   }
 
   .three-dots {
@@ -365,16 +366,40 @@ body {
   .three-dots span {
     position: absolute;
     top: 6.5rem;
-    /* right: 5rem; */
     width: 310px;
     margin-left: 0;
     margin-right: 0;
+  }
+
+  .three-dots .week-1 {
+    margin-right: 3.5rem;
+  }
+
+  .three-dots .week-2 {
+    margin-right: 3rem;
+  }
+
+  .three-dots .week-3 {
+    margin-right: 0.5rem;
+  }
+
+  .three-dots .week-4 {
+    margin-right: 0.5rem;
+  }
+
+  .three-dots .week-5 {
+    margin-right: 0.3rem;
+  }
+
+  .three-dots .week-6 {
+    margin-right: 0.2rem;
   }
 
   .work-hours .hours span {
     margin-bottom: 4rem;
     font-size: 3rem;
     font-weight: 300;
+    margin-left: 1rem;
   }
 
   .three-dots .dot {
