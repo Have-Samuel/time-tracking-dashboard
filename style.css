@@ -252,15 +252,158 @@ body {
     grid-template-rows: 1fr;
     gap: 1rem;
     position: absolute;
-    top: 12rem;
+    top: 13rem;
     left: 23rem;
+    margin-left: 6rem;
+    margin-top: 0;
   }
 
   .person {
     width: 255px;
-    height: 518px;
+    height: 315px;
     position: absolute;
     top: 9rem;
     left: 6rem;
+    margin-left: 6rem;
+  }
+
+  .content-inner {
+    flex-direction: column;
+    margin-right: 7rem;
+    margin-bottom: 6rem;
+  }
+
+  .person__name {
+    width: 139px;
+  }
+
+  .person__name span {
+    margin-left: 2rem;
+  }
+
+  .person__name h1 {
+    margin-left: 2rem;
+    font-size: 23px;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+  }
+
+  .da-we-mo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 255px;
+    height: 123px;
+    position: absolute;
+    top: 19rem;
+    left: 0;
+    gap: 0;
+  }
+
+  .da-we-mo span {
+    color: #7078c9;
+    font-size: 12px;
+    font-weight: 200;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 0;
+  }
+
+  .image-show {
+    width: 255px;
+    height: 28px;
+    position: relative;
+  }
+
+  .image-show img {
+    filter: invert(18%);
+    position: absolute;
+    top: -10px;
+    right: 15px;
+    clip: rect(10px, 327px, 54px, 0);
+  }
+
+  .content {
+    width: 255px;
+    height: 160px;
+    gap: 2rem;
+  }
+
+  .play-card {
+    margin-top: 0;
+  }
+
+  .play-card1 {
+    margin-top: 0;
+  }
+
+  .play-card2 {
+    margin-top: 0;
+  }
+
+  .play-card3 {
+    margin-top: 0;
+  }
+
+  .play-card4 {
+    margin-top: 0;
+  }
+
+  .play-card5 {
+    margin-top: 0;
+  }
+
+  .work-hours h2 {
+    margin-top: -2rem;
+    margin-left: 1rem;
+  }
+
+  .three-dots {
+    position: relative;
+  }
+
+  .three-dots span {
+    position: absolute;
+    top: 6.5rem;
+    width: 310px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .three-dots .week-1 {
+    margin-right: 3.5rem;
+  }
+
+  .three-dots .week-2 {
+    margin-right: 3rem;
+  }
+
+  .three-dots .week-3 {
+    margin-right: 0.5rem;
+  }
+
+  .three-dots .week-4 {
+    margin-right: 0.5rem;
+  }
+
+  .three-dots .week-5 {
+    margin-right: 0.3rem;
+  }
+
+  .three-dots .week-6 {
+    margin-right: 0.2rem;
+  }
+
+  .work-hours .hours span {
+    margin-bottom: 4rem;
+    font-size: 3rem;
+    font-weight: 300;
+    margin-left: 1rem;
+  }
+
+  .three-dots .dot {
+    margin-left: 3rem;
+    margin-bottom: 7.5rem;
   }
 }
