@@ -196,6 +196,11 @@ body {
   border-radius: 10px;
 }
 
+.content:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
 .work-hours h2 {
   color: #fff;
   font-size: 13px;
