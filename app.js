@@ -1,5 +1,9 @@
 const sectionCards = document.querySelector('#card-section');
 
+// Fetching the json API
+fetch('http://localhost:3000/user')
+  .then((res) => console.log(res));
+
 // Create Card
 function cardFn() {
   const card = document.createElement('div');
