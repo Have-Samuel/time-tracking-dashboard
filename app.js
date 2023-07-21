@@ -2,7 +2,10 @@ const sectionCards = document.querySelector('#card-section');
 
 // Fetching the json API
 fetch('http://localhost:3000/user')
-  .then((res) => console.log(res));
+  // Getting the data from database
+  // And fast converting it into json
+  .then((res) => res.json())
+  .then((json) => console.log(json));
 
 // Create Card
 function cardFn() {
