@@ -180,7 +180,7 @@ body {
 .image-show img {
   filter: invert(18%);
   position: absolute;
-  top: -10px;
+  top: -9px;
   right: 15px;
   clip: rect(10px, 327px, 54px, 0);
 }
