@@ -1,7 +1,7 @@
 /* eslint-disable no-use-before-define */
 /* eslint-disable array-callback-return */
 const sectionCards = document.querySelector('#card-section');
-
+// sectionCards.append(cardFn());
 // Fetching the json API
 fetch('http://localhost:3000/user')
   // Getting the data from database
@@ -11,12 +11,12 @@ fetch('http://localhost:3000/user')
   .then((json) => {
     json.map((data) => {
       console.log(data.title);
-      sectionCards.append(cardFn(data.title));
+      sectionCards.appendChild(cardFn());
     });
   });
 
 // Create Card
-function cardFn(title) {
+function cardFn() {
   const card = document.createElement('div');
   card.innerHTML = `
   <div class="play-card">
