@@ -11,7 +11,7 @@ fetch('http://localhost:3000/user')
   .then((json) => {
     json.map((data) => {
       console.log(data.title);
-      sectionCards.appendChild(cardFn());
+      sectionCards.append(cardFn());
     });
   });
 
