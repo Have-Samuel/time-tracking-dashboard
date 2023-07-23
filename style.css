@@ -378,9 +378,8 @@ body {
   .three-dots span {
     position: absolute;
     top: 6.5rem;
-    /* width: 310px; */
+    width: 310px;
     margin-left: 0;
-    margin-right: 0;
   }
 
   .three-dots .week-1 {
@@ -388,7 +387,7 @@ body {
   }
 
   .three-dots .week-2 {
-    margin-right: 3rem;
+    margin-right: 2.5rem;
   }
 
   .three-dots .week-3 {
