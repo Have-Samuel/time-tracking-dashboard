@@ -1,7 +1,7 @@
 /* eslint-disable no-use-before-define */
 /* eslint-disable array-callback-return */
-const sectionCards = document.querySelector('#card-section');
-sectionCards.append(cardFn());
+// const infoCards = document.querySelector('.changer');
+infoCards.append(cardInfo());
 // Fetching the json API
 fetch('http://localhost:3000/user')
   // Getting the data from database
@@ -14,12 +14,12 @@ fetch('http://localhost:3000/user')
     });
   });
 
-// Create Card
-function cardFn() {
-  const card = document.createElement('div');
-  card.innerHTML = `
-  
+// Showing the data in the DOM
+function cardInfo() {
+  const cardShower = document.createElement('span');
+  cardShower.innerHTML = `
+
   `;
-  return card;
+  return cardShower;
 }
-cardFn();
+cardInfo();
