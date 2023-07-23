@@ -330,6 +330,10 @@ body {
   }
 
   .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
     width: 255px;
     height: 160px;
     gap: 2rem;
@@ -365,13 +369,16 @@ body {
   }
 
   .three-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
   }
 
   .three-dots span {
     position: absolute;
     top: 6.5rem;
-    width: 310px;
+    /* width: 310px; */
     margin-left: 0;
     margin-right: 0;
   }
