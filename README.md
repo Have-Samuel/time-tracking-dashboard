@@ -48,8 +48,8 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 - [JSON Data](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON)
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
+- [npm-server](https://www.npmjs.com/package/http-server) - JS library
+- [Linters](https://github.com/microverseinc/linters-config)
 - [Styled Components](https://styled-components.com/) - For styles
 
 **Note: These are just examples. Delete this note and replace the list above with your own choices**
