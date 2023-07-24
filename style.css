@@ -360,7 +360,6 @@ body {
 
   .work-hours h2 {
     margin-top: -2rem;
-
   }
 
   .three-dots {
@@ -405,7 +404,6 @@ body {
   .work-hours .hours span {
     font-size: 3rem;
     font-weight: 300;
-    /* margin-left: 1rem; */
   }
 
   .three-dots .dot {
