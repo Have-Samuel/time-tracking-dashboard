@@ -9,8 +9,8 @@ fetch('http://localhost:3000/user')
   .then((res) => res.json())
   // iterating the data and getting information from the data
   .then((json) => {
-    json.map((data) => {
-      console.log(data.title);
+    json.map(() => {
+
     });
   });
 
