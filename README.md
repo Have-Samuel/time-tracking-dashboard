@@ -50,13 +50,8 @@ Users should be able to:
 - [JSON Data](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON)
 - [npm-server](https://www.npmjs.com/package/http-server) - JS library
 - [Linters](https://github.com/microverseinc/linters-config)
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
 To see how you can add code snippets, see below:
 
