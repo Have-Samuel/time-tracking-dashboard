@@ -192,7 +192,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6rem;
+  gap: 8rem;
   border-radius: 10px;
 }
 
@@ -212,7 +212,7 @@ body {
   color: #bbc0ff;
   font-size: 12px;
   font-weight: 200;
-  margin-left: 1.9rem;
+  /* margin-left: 1.9rem; */
 }
 
 .work-hours .hours span {
@@ -231,7 +231,7 @@ body {
 }
 
 .three-dots .dot {
-  margin-left: 6.2rem;
+  margin-left: 4.2rem;
 }
 
 .da-we-mo span:hover {

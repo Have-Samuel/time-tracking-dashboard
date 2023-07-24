@@ -1,6 +1,6 @@
 /* eslint-disable no-use-before-define */
 /* eslint-disable array-callback-return */
-// const infoCards = document.querySelector('.changer');
+const infoCards = document.querySelector('.changer');
 infoCards.append(cardInfo());
 // Fetching the json API
 fetch('http://localhost:3000/user')
