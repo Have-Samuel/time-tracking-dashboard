@@ -331,12 +331,9 @@ body {
 
   .content {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
     width: 255px;
     height: 160px;
-    gap: 4rem;
+    gap: 1rem;
   }
 
   .play-card {
@@ -365,7 +362,7 @@ body {
 
   .work-hours h2 {
     margin-top: -2rem;
-    margin-left: 1rem;
+    /* margin-left: 2rem; */
   }
 
   .three-dots {
@@ -377,17 +374,17 @@ body {
 
   .three-dots span {
     position: absolute;
-    top: 5rem;
+    top: 6.3rem;
     left: -7rem;
     margin-left: 0;
     margin-right: 0;
   }
 
-  /* .three-dots .week-1 {
-    margin-right: 3.5rem;
+  .three-dots .week-1 {
+    margin-right: -3.5rem;
   }
 
-  .three-dots .week-2 {
+  /* .three-dots .week-2 {
     margin-right: 2.5rem;
   }
 
@@ -408,14 +405,14 @@ body {
   } */
 
   .work-hours .hours span {
-    margin-bottom: 7rem;
+    /* margin-bottom: 7rem; */
     font-size: 3rem;
     font-weight: 300;
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
   }
 
   .three-dots .dot {
     margin-left: 3rem;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
   }
 }
