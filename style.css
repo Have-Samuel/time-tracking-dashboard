@@ -212,7 +212,6 @@ body {
   color: #bbc0ff;
   font-size: 12px;
   font-weight: 200;
-  /* margin-left: 1.9rem; */
 }
 
 .work-hours .hours span {
@@ -254,7 +253,6 @@ body {
   .desktop-data {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* grid-template-rows: 1fr; */
     gap: 1rem;
     position: absolute;
     top: 13rem;
@@ -362,7 +360,7 @@ body {
 
   .work-hours h2 {
     margin-top: -2rem;
-    /* margin-left: 2rem; */
+
   }
 
   .three-dots {
