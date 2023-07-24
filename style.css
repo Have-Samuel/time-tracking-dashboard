@@ -254,12 +254,12 @@ body {
   .desktop-data {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    /* grid-template-rows: 1fr; */
     gap: 1rem;
     position: absolute;
     top: 13rem;
     left: 23rem;
-    margin-left: 6rem;
+    margin-left: 1.5rem;
     margin-top: 0;
   }
 
@@ -269,7 +269,7 @@ body {
     position: absolute;
     top: 9rem;
     left: 6rem;
-    margin-left: 6rem;
+    margin-left: 1.5rem;
   }
 
   .content-inner {
@@ -336,7 +336,7 @@ body {
     flex-direction: row;
     width: 255px;
     height: 160px;
-    gap: 2rem;
+    gap: 4rem;
   }
 
   .play-card {
@@ -377,12 +377,13 @@ body {
 
   .three-dots span {
     position: absolute;
-    top: 6.5rem;
-    width: 310px;
+    top: 5rem;
+    left: -7rem;
     margin-left: 0;
+    margin-right: 0;
   }
 
-  .three-dots .week-1 {
+  /* .three-dots .week-1 {
     margin-right: 3.5rem;
   }
 
@@ -391,11 +392,11 @@ body {
   }
 
   .three-dots .week-3 {
-    margin-right: 0.5rem;
+    margin-left: 4rem;
   }
 
   .three-dots .week-4 {
-    margin-right: 0.5rem;
+    margin-left: 3.5rem;
   }
 
   .three-dots .week-5 {
@@ -404,10 +405,10 @@ body {
 
   .three-dots .week-6 {
     margin-right: 0.2rem;
-  }
+  } */
 
   .work-hours .hours span {
-    margin-bottom: 4rem;
+    margin-bottom: 7rem;
     font-size: 3rem;
     font-weight: 300;
     margin-left: 1rem;
@@ -415,6 +416,6 @@ body {
 
   .three-dots .dot {
     margin-left: 3rem;
-    margin-bottom: 7.5rem;
+    margin-bottom: 4rem;
   }
 }
