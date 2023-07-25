@@ -88,14 +88,14 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- [LinkedIn](https://www.linkedin.com/in/have-samuel/)
 - [FrontendMentor](https://www.frontendmentor.io/profile/Have-Samuel)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- [Twitter](https://twitter.com/samhave1)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+## 🤝 Contributing
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/Have-Samuel/time-tracking-dashboard/issues).
