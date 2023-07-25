@@ -92,10 +92,9 @@ Use this section to outline areas that you want to continue focusing on in futur
 - [FrontendMentor](https://www.frontendmentor.io/profile/Have-Samuel)
 - [Twitter](https://twitter.com/samhave1)
 
-## Acknowledgments
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](https://github.com/Have-Samuel/time-tracking-dashboard/issues).
+
