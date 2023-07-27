@@ -6,21 +6,13 @@ const dailyStats = document.querySelector('.daily-data');
 const cardNo = document.querySelector('.no-card');
 const pervData = document.querySelector('.week-1');
 
-function dataCollector() {
-
-}
-// infoCards.append(cardInfo());
-// // Fetching the json API
-// fetch('http://localhost:3000/user')
-//   // Getting the data from database
-//   // And fast converting it into json
-//   .then((res) => res.json())
-//   // iterating the data and getting information from the data
-//   .then((json) => {
-//     json.map(() => {
-
-//     });
-//   });
+// Fetching the json API
+fetch('http://localhost:3000/user')
+  // Getting the data from database
+  // And fast converting it into json
+  .then((res) => res.json())
+  // iterating the data and getting information from the data
+  .then(console.log());
 
 // // Showing the data in the DOM
 // function cardInfo() {
