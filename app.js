@@ -14,12 +14,11 @@ fetch('http://localhost:3000/user')
     return res.json();
   })
   .then((cards) => {
-    const sectionCards = document.querySelector('#card-section');
-
-    let display = '';
-    for (let card of cards) {
-      display += `
-      
-      `;
-    }
+    dailyStats.addEventListener('click', () => {
+      console.log(cards);
+      // Looping through the data
+      cards.map((card) => {
+        
+      });
+    });
   })
