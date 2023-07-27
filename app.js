@@ -15,11 +15,4 @@ fetch('http://localhost:3000/user')
   });
 
 // Showing the data in the DOM
-function cardInfo() {
-  const cardShower = document.createElement('span');
-  cardShower.innerHTML = `
 
-  `;
-  return cardShower;
-}
-cardInfo();
