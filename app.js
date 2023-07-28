@@ -14,7 +14,5 @@ const url = fetch('http://localhost:3000/user')
   // Getting the current and previous hours for title "work"
   .then((data) => {
     // add an event to daily so that when you click on it, it will show the daily data
-    dailyStats.addEventListener('click', () => {
-      cardNo.textContent = url.title.;
-    });
+    
   });
