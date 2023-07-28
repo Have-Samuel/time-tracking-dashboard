@@ -7,13 +7,14 @@ const cardNo = document.querySelector('.no-card');
 const pervData = document.querySelector('.week-1');
 
 // Fetching the json API
-fetch('http://localhost:3000/user')
+const url = fetch('http://localhost:3000/user')
   // Getting the data from database
   // And fast converting it into json
   .then((res) => res.json())
-  .then((card) => {
+  // Getting the current and previous hours for title "work"
+  .then((data) => {
+    // add an event to daily so that when you click on it, it will show the daily data
     dailyStats.addEventListener('click', () => {
-      cardNo.innerText = '';
-      cardNo.appendChild(cardData);
+      cardNo.textContent = url.title.;
     });
   });
