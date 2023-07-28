@@ -4,7 +4,7 @@
 // Fetching daily data from db.json
 const dailyStats = document.querySelector('.daily-data');
 const cardNo = document.querySelector('.no-card');
-const pervData = document.querySelector('.week-1');
+const prevData = document.querySelector('.week-1');
 
 // Fetching the json API
 const url = fetch('http://localhost:3000/user')
@@ -16,6 +16,7 @@ const url = fetch('http://localhost:3000/user')
     // add an event to daily so that when you click on it, it will show the daily data
     dailyStats.addEventListener('click', () => {
       console.log(data.daily);
-      cardNo.textContent = `${data.daily}hrs`;
+      cardNo.textContent = `${data.daily[0]}hrs`;
+      prevData.textContent = `${data.prevDaily}hrs`;
     });
   });
