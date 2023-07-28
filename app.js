@@ -10,15 +10,10 @@ const pervData = document.querySelector('.week-1');
 fetch('http://localhost:3000/user')
   // Getting the data from database
   // And fast converting it into json
-  .then((res) => {
-    return res.json();
-  })
-  .then((cards) => {
+  .then((res) => res.json())
+  .then((card) => {
     dailyStats.addEventListener('click', () => {
-      console.log(cards);
-      // Looping through the data
-      cards.map((card) => {
-        
-      });
+      cardNo.innerText = '';
+      cardNo.appendChild(cardData);
     });
-  })
+  });
