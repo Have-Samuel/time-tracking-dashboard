@@ -15,7 +15,7 @@ const url = fetch('http://localhost:3000/user')
   .then((data) => {
     // add an event to daily so that when you click on it, it will show the daily data
     dailyStats.addEventListener('click', () => {
-      console.log();
-      // cardNo.textContent = `${data[0].daily[0].hours}hrs`;
+      console.log(data.daily);
+      cardNo.textContent = `${data.daily}hrs`;
     });
   });
