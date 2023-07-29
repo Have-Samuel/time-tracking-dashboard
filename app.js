@@ -3,6 +3,7 @@
 
 // Fetching daily data from db.json
 const dailyStats = document.querySelector('.daily-data');
+const weeklyStats = document.querySelector('.weekly-data');
 const cardNo = document.querySelector('.no-card');
 const prevData = document.querySelector('.week-1');
 
