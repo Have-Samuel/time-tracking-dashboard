@@ -25,7 +25,7 @@ fetch('http://localhost:3000/user')
     weeklyStats.addEventListener('click', () => {
       console.log(cards[0].timeframes.weekly.current);
       console.log(cards[0].timeframes.weekly.previous);
-      // cardNo.textContent = `${cards[0].timeframes.daily.current}hrs`;
-      // prevData.textContent = `Yesterday - ${cards[0].timeframes.daily.previous}hrs`;
+      cardNo.textContent = `${cards[0].timeframes.weekly.current}hrs`;
+      prevData.textContent = `Yesterday - ${cards[0].timeframes.weekly.previous}hrs`;
     });
   });
