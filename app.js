@@ -3,21 +3,35 @@
 
 // Fetching daily data from db.json
 const dailyStats = document.querySelector('.daily-data');
+const weeklyStats = document.querySelector('.weekly-data');
+const monthlyStats = document.querySelector('.monthly-data');
 const cardNo = document.querySelector('.no-card');
 const prevData = document.querySelector('.week-1');
 
 // Fetching the json API
-const url = fetch('http://localhost:3000/user')
+fetch('http://localhost:3000/user')
   // Getting the data from database
   // And fast converting it into json
   .then((res) => res.json())
   // Getting the current and previous hours for title "work"
-  .then((data) => {
+  .then((cards) => {
     // add an event to daily so that when you click on it, it will show the daily data
     dailyStats.addEventListener('click', () => {
-      // console.log(data.daily);
-      // console.log(data.daily.previous);
-      cardNo.textContent = `${data.daily}hrs`;
-      prevData.textContent = `${data.daily}hrs`;
+      console.log(cards[0].timeframes.daily.current);
+      console.log(cards[0].timeframes.daily.previous);
+      cardNo.textContent = `${cards[0].timeframes.daily.current}hrs`;
+      prevData.textContent = `Yesterday - ${cards[0].timeframes.daily.previous}hrs`;
+    });
+    weeklyStats.addEventListener('click', () => {
+      console.log(cards[0].timeframes.weekly.current);
+      console.log(cards[0].timeframes.weekly.previous);
+      cardNo.textContent = `${cards[0].timeframes.weekly.current}hrs`;
+      prevData.textContent = `Yesterday - ${cards[0].timeframes.weekly.previous}hrs`;
+    });
+    monthlyStats.addEventListener('click', () => {
+      console.log(cards[0].timeframes.monthly.current);
+      console.log(cards[0].timeframes.monthly.previous);
+      cardNo.textContent = `${cards[0].timeframes.monthly.current}hrs`;
+      prevData.textContent = `Yesterday - ${cards[0].timeframes.monthly.previous}hrs`;
     });
   });
