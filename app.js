@@ -6,7 +6,7 @@ const dailyStats = document.querySelector('.daily-data');
 const weeklyStats = document.querySelector('.weekly-data');
 const monthlyStats = document.querySelector('.monthly-data');
 const cardNo = document.querySelector('.no-card');
-const prevData = document.querySelector('.week-1');
+const prevData = document.querySelector('.week');
 
 // Fetching the json API
 fetch('http://localhost:3000/user')
