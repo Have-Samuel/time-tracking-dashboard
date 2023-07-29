@@ -18,6 +18,6 @@ const url = fetch('http://localhost:3000/user')
       // console.log(data.daily);
       // console.log(data.daily.previous);
       cardNo.textContent = `${data.daily}hrs`;
-      prevData.textContent = `${data.daily.value}hrs`;
+      prevData.textContent = `${data.daily}hrs`;
     });
   });
