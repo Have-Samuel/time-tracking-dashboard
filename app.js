@@ -12,12 +12,12 @@ const url = fetch('http://localhost:3000/user')
   // And fast converting it into json
   .then((res) => res.json())
   // Getting the current and previous hours for title "work"
-  .then((data) => {
+  .then((cards) => {
     // add an event to daily so that when you click on it, it will show the daily data
     dailyStats.addEventListener('click', () => {
-      // console.log(data.daily);
-      // console.log(data.daily.previous);
-      cardNo.textContent = `${data.daily}hrs`;
-      prevData.textContent = `${data.daily}hrs`;
+      console.log(cards.daily);
+      console.log(cards.daily);
+      cardNo.innerHTML = `${cards.daily.value}hrs`;
+      prevData.textContent = `${cards.daily}hrs`;
     });
   });
