@@ -15,9 +15,9 @@ const url = fetch('http://localhost:3000/user')
   .then((cards) => {
     // add an event to daily so that when you click on it, it will show the daily data
     dailyStats.addEventListener('click', () => {
-      console.log(cards.daily);
-      console.log(cards.daily);
-      cardNo.innerHTML = `${cards.daily.value}hrs`;
-      prevData.textContent = `${cards.daily}hrs`;
+      console.log(cards[0].timeframes.daily.current);
+      console.log(cards[0].timeframes.daily.previous);
+      cardNo.textContent = `${cards[0].timeframes.daily.current}hrs`;
+      prevData.textContent = `Yesterday - ${cards[0].timeframes.daily.previous}hrs`;
     });
   });
