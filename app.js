@@ -7,7 +7,7 @@ const cardNo = document.querySelector('.no-card');
 const prevData = document.querySelector('.week-1');
 
 // Fetching the json API
-const url = fetch('http://localhost:3000/user')
+fetch('http://localhost:3000/user')
   // Getting the data from database
   // And fast converting it into json
   .then((res) => res.json())
