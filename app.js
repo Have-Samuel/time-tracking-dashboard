@@ -42,16 +42,16 @@ fetch('http://localhost:3000/user')
       cardNo.textContent = `${cards[1].timeframes.daily.current}hrs`;
       prevData.textContent = `Yesterday - ${cards[1].timeframes.daily.previous}hrs`;
     });
-    weeklyStats.addEventListener('click', () => {
-      console.log(cards[0].timeframes.weekly.current);
-      console.log(cards[0].timeframes.weekly.previous);
-      cardNo.textContent = `${cards[0].timeframes.weekly.current}hrs`;
-      prevData.textContent = `Yesterday - ${cards[0].timeframes.weekly.previous}hrs`;
-    });
-    monthlyStats.addEventListener('click', () => {
-      console.log(cards[0].timeframes.monthly.current);
-      console.log(cards[0].timeframes.monthly.previous);
-      cardNo.textContent = `${cards[0].timeframes.monthly.current}hrs`;
-      prevData.textContent = `Yesterday - ${cards[0].timeframes.monthly.previous}hrs`;
-    });
+    // weeklyStats.addEventListener('click', () => {
+    //   console.log(cards[0].timeframes.weekly.current);
+    //   console.log(cards[0].timeframes.weekly.previous);
+    //   cardNo.textContent = `${cards[0].timeframes.weekly.current}hrs`;
+    //   prevData.textContent = `Yesterday - ${cards[0].timeframes.weekly.previous}hrs`;
+    // });
+    // monthlyStats.addEventListener('click', () => {
+    //   console.log(cards[0].timeframes.monthly.current);
+    //   console.log(cards[0].timeframes.monthly.previous);
+    //   cardNo.textContent = `${cards[0].timeframes.monthly.current}hrs`;
+    //   prevData.textContent = `Yesterday - ${cards[0].timeframes.monthly.previous}hrs`;
+    // });
   });
