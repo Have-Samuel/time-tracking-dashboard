@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-use-before-define */
 /* eslint-disable array-callback-return */
 
@@ -18,8 +19,9 @@ fetch('http://localhost:3000/user')
     const title = '';
     // add an event to daily so that when you click on it, it will show the daily data
     // Card One
-    dailyStats.addEventListener('click', () => {
+    dailyStats.addEventListener('click', (title = 'Work') => {
       console.log(user[0].timeframes.daily.current);
+      // console.log(user[0].timeframes.daily.current);
       console.log(user[0].timeframes.daily.previous);
       // if (title === 'Work') {
       //   cardNo.textContent = `${user[0].timeframes.daily.current}hrs`;
@@ -32,7 +34,7 @@ fetch('http://localhost:3000/user')
       //   cardNo.textContent = `${user[2].timeframes.daily.current}hrs`;
       //   prevData.textContent = `Yesterday - ${user[2].timeframes.daily.previous}hrs`;
       // }
-      cardNo.textContent = `${user[0].timeframes.daily.current}hrs`;
+      cardNo.textContent = `${user[0].title.timeframes.daily.current}hrs`;
       prevData.textContent = `Yesterday - ${user[0].timeframes.daily.previous}hrs`;
     });
     // weeklyStats.addEventListener('click', () => {
@@ -48,12 +50,12 @@ fetch('http://localhost:3000/user')
     //   prevData.textContent = `Yesterday - ${cards[0].timeframes.monthly.previous}hrs`;
     // });
     // Card Two
-    // dailyStats.addEventListener('click', () => {
-    //   console.log(user[1].timeframes.daily.current);
-    //   console.log(user[1].timeframes.daily.previous);
-    //   cardNo.textContent = `${user[1].timeframes.daily.current}hrs`;
-    //   prevData.textContent = `Yesterday - ${user[1].timeframes.daily.previous}hrs`;
-    // });
+    dailyStats.addEventListener('click', () => {
+      console.log(user[1].timeframes.daily.current);
+      console.log(user[1].timeframes.daily.previous);
+      cardNo.textContent = `${user[1].timeframes.daily.current}hrs`;
+      prevData.textContent = `Yesterday - ${user[1].timeframes.daily.previous}hrs`;
+    });
     // weeklyStats.addEventListener('click', () => {
     //   console.log(cards[0].timeframes.weekly.current);
     //   console.log(cards[0].timeframes.weekly.previous);
