@@ -54,4 +54,12 @@ fetch('http://localhost:3000/user')
     //   cardNo.textContent = `${cards[0].timeframes.monthly.current}hrs`;
     //   prevData.textContent = `Yesterday - ${cards[0].timeframes.monthly.previous}hrs`;
     // });
+
+    // Card Three
+    dailyStats.addEventListener('click', () => {
+      console.log(cards[2].timeframes.daily.current);
+      console.log(cards[2].timeframes.daily.previous);
+      cardNo.textContent = `${cards[2].timeframes.daily.current}hrs`;
+      prevData.textContent = `Yesterday - ${cards[2].timeframes.daily.previous}hrs`;
+    });
   });
