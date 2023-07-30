@@ -15,13 +15,25 @@ fetch('http://localhost:3000/user')
   .then((res) => res.json())
   // Getting the current and previous hours for title "work"
   .then((cards) => {
+    const title = '';
     // add an event to daily so that when you click on it, it will show the daily data
     // Card One
     dailyStats.addEventListener('click', () => {
       console.log(cards[0].timeframes.daily.current);
       console.log(cards[0].timeframes.daily.previous);
-      cardNo.textContent = `${cards[0].timeframes.daily.current}hrs`;
-      prevData.textContent = `Yesterday - ${cards[0].timeframes.daily.previous}hrs`;
+      if (title === 'Work') {
+        cardNo.textContent = `${cards[0].timeframes.daily.current}hrs`;
+        prevData.textContent = `Yesterday - ${cards[0].timeframes.daily.previous}hrs`;
+      }
+      if (title === 'Play') {
+        cardNo.textContent = `${cards[1].timeframes.daily.current}hrs`;
+        prevData.textContent = `Yesterday - ${cards[1].timeframes.daily.previous}hrs`;
+      } if (title === 'Study') {
+        cardNo.textContent = `${cards[2].timeframes.daily.current}hrs`;
+        prevData.textContent = `Yesterday - ${cards[2].timeframes.daily.previous}hrs`;
+      }
+      // cardNo.textContent = `${cards[0].timeframes.daily.current}hrs`;
+      // prevData.textContent = `Yesterday - ${cards[0].timeframes.daily.previous}hrs`;
     });
     // weeklyStats.addEventListener('click', () => {
     //   console.log(cards[0].timeframes.weekly.current);
@@ -36,12 +48,12 @@ fetch('http://localhost:3000/user')
     //   prevData.textContent = `Yesterday - ${cards[0].timeframes.monthly.previous}hrs`;
     // });
     // Card Two
-    dailyStats.addEventListener('click', () => {
-      console.log(cards[1].timeframes.daily.current);
-      console.log(cards[1].timeframes.daily.previous);
-      cardNo.textContent = `${cards[1].timeframes.daily.current}hrs`;
-      prevData.textContent = `Yesterday - ${cards[1].timeframes.daily.previous}hrs`;
-    });
+    // dailyStats.addEventListener('click', () => {
+    //   console.log(cards[1].timeframes.daily.current);
+    //   console.log(cards[1].timeframes.daily.previous);
+    //   cardNo.textContent = `${cards[1].timeframes.daily.current}hrs`;
+    //   prevData.textContent = `Yesterday - ${cards[1].timeframes.daily.previous}hrs`;
+    // });
     // weeklyStats.addEventListener('click', () => {
     //   console.log(cards[0].timeframes.weekly.current);
     //   console.log(cards[0].timeframes.weekly.previous);
@@ -56,10 +68,10 @@ fetch('http://localhost:3000/user')
     // });
 
     // Card Three
-    dailyStats.addEventListener('click', () => {
-      console.log(cards[2].timeframes.daily.current);
-      console.log(cards[2].timeframes.daily.previous);
-      cardNo.textContent = `${cards[2].timeframes.daily.current}hrs`;
-      prevData.textContent = `Yesterday - ${cards[2].timeframes.daily.previous}hrs`;
-    });
+    // dailyStats.addEventListener('click', () => {
+    //   console.log(cards[2].timeframes.daily.current);
+    //   console.log(cards[2].timeframes.daily.previous);
+    //   cardNo.textContent = `${cards[2].timeframes.daily.current}hrs`;
+    //   prevData.textContent = `Yesterday - ${cards[2].timeframes.daily.previous}hrs`;
+    // });
   });
