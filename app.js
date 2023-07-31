@@ -32,7 +32,7 @@ card.className = 'play-card';
 
 const showImg = document.createElement('div');
 showImg.className = 'image-show';
-const imgOne = document.createElement('image');
+const imgOne = document.createElement('img');
 imgOne.src = './images/icon-work.svg';
 showImg.appendChild(imgOne);
 
@@ -55,7 +55,7 @@ const threeDots = document.createElement('div');
 threeDots.className = 'three-dots';
 const dotImg = document.createElement('div');
 dotImg.className = 'dot';
-const imgTwo = document.createElement('image');
+const imgTwo = document.createElement('img');
 imgTwo.src = './images/icon-ellipsis.svg';
 dotImg.append(imgTwo);
 
