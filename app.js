@@ -37,10 +37,13 @@ img.classList = '';
 showImg.append(img);
 
 const contDiv = document.querySelector('.content');
+
 const workHours = document.querySelector('.work-hours');
 const title = document.querySelector('h2');
 title.textContent = 'Work';
-workHours.append(title);
-
+const hours = document.querySelector('.hours');
+const spanDiv = document.querySelector('.no-card');
+hours.append(spanDiv);
+workHours.append(title, hours);
 
 displaySection.append(card);
