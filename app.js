@@ -33,13 +33,14 @@ card.className = 'play-card';
 const showImg = document.createElement('div');
 showImg.className = 'image-show';
 const imgOne = document.createElement('image');
-imgOne.src = './images/icon-work.svg" alt="work';
+imgOne.src = './images/icon-work.svg';
 showImg.appendChild(imgOne);
 
 const contDiv = document.createElement('div');
 contDiv.className = 'content';
 
-const workHours = document.querySelector('.work-hours');
+const workHours = document.createElement('div');
+workHours.className = 'work-hours';
 const title = document.createElement('h2');
 title.innerHTML = 'Work';
 const hours = document.createElement('div');
@@ -69,4 +70,6 @@ threeDots.append(dotImg, prevUpDate);
 
 contDiv.append(workHours, threeDots);
 card.append(showImg, contDiv);
+displaySection.style.backgroundColor = 'yellow';
+displaySection.style.border = '1px solid red';
 displaySection.append(card);
