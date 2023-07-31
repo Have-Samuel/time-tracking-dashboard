@@ -36,5 +36,7 @@ const img = './images/icon-work.svg" alt="work';
 img.classList = '';
 showImg.append(img);
 
+const contDiv = document.querySelector('.content');
+
 
 displaySection.append(card);
