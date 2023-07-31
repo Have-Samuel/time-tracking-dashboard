@@ -34,15 +34,16 @@ const showImg = document.createElement('div');
 showImg.classList = 'image-show';
 const imgOne = document.createElement('image');
 imgOne.src = './images/icon-work.svg" alt="work';
-showImg.appendChild(img);
+showImg.appendChild(imgOne);
 
 const contDiv = document.querySelector('.content');
 
 const workHours = document.querySelector('.work-hours');
-const title = document.querySelector('h2');
-title.textContent = 'Work';
+const title = document.createElement('h2');
+title.innerHTML = 'Work';
 const hours = document.querySelector('.hours');
-const spanDiv = document.querySelector('.no-card');
+const spanDiv = document.createElement('span');
+spanDiv.classList = 'no-card';
 hours.appendChild(spanDiv);
 workHours.append(title, hours);
 
@@ -60,4 +61,6 @@ prevUpDate.appendChild(spanDis);
 
 threeDots.append(dotImg, prevUpDate);
 
+contDiv.append(workHours, threeDots);
+card.append(showImg, contDiv);
 displaySection.append(card);
