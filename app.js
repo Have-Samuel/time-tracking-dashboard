@@ -181,4 +181,3 @@ user.forEach((work) => {
     prev.textContent = `Last Month - ${prevMonthly}hrs`;
   });
 });
-
