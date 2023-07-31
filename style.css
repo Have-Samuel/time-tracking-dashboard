@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
 
+:root {
+  --theme-orange: #d96c47;
+  --theme-blue: #55c2e6;
+  --theme-pink: #ff5e7d;
+  --theme-green: #4bcf82;
+  --theme-purple: #5a1cbb;
+  --theme-yellow: #f1c75b;
+}
+
 * {
   padding: 0;
   margin: 0;
