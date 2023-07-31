@@ -34,7 +34,7 @@ const showImg = document.createElement('div');
 showImg.classList = 'image-show';
 const imgOne = document.createElement('image');
 imgOne.src = './images/icon-work.svg" alt="work';
-showImg.append(img);
+showImg.appendChild(img);
 
 const contDiv = document.querySelector('.content');
 
@@ -43,13 +43,21 @@ const title = document.querySelector('h2');
 title.textContent = 'Work';
 const hours = document.querySelector('.hours');
 const spanDiv = document.querySelector('.no-card');
-hours.append(spanDiv);
+hours.appendChild(spanDiv);
 workHours.append(title, hours);
 
 const threeDots = document.querySelector('.three-dots');
 const dotImg = document.querySelector('.dot');
 const imgTwo = document.createElement('image');
 imgTwo.src = './images/icon-ellipsis.svg';
+dotImg.append(imgTwo);
 
+const prevUpDate = document.querySelector('.changer');
+const spanDis = document.createElement('span');
+spanDis.textContent = 'last Week - 36hrs';
+spanDis.classList = 'week';
+prevUpDate.appendChild(spanDis);
+
+threeDots.append(dotImg, prevUpDate);
 
 displaySection.append(card);
