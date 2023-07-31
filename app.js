@@ -32,8 +32,8 @@ card.classList = 'play-card';
 
 const showImg = document.createElement('div');
 showImg.classList = 'image-show';
-const img = './images/icon-work.svg" alt="work';
-img.classList = '';
+const imgOne = document.createElement('image');
+imgOne.src = './images/icon-work.svg" alt="work';
 showImg.append(img);
 
 const contDiv = document.querySelector('.content');
@@ -47,6 +47,9 @@ hours.append(spanDiv);
 workHours.append(title, hours);
 
 const threeDots = document.querySelector('.three-dots');
+const dotImg = document.querySelector('.dot');
+const imgTwo = document.createElement('image');
+imgTwo.src = './images/icon-ellipsis.svg';
 
 
 displaySection.append(card);
