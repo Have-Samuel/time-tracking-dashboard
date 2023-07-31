@@ -1,10 +1,7 @@
 // Fetching daily data from db.json
-const displaySection = document.querySelector('#card-section');
 const dailyStats = document.querySelector('.daily-data');
 const weeklyStats = document.querySelector('.weekly-data');
 const monthlyStats = document.querySelector('.monthly-data');
-const cardNo = document.querySelector('.no-card');
-const prevData = document.querySelector('.week');
 
 const user = [
   {
@@ -188,9 +185,11 @@ allCards.innerHTML = user.map(cardSection).join('');
 
 // Lopp though the data array
 user.forEach((work) => {
-  const daily = work.timeframes.daily.current;
-  const weekly = work.timeframes.weekly.current;
-  const monthly = work.timeframes.monthly.current;
+  const cardNo = document.querySelector('.no-card');
+  const prevData = document.querySelector('.week');
+  // const daily = work.timeframes.daily.current;
+  // const weekly = work.timeframes.weekly.current;
+  // const monthly = work.timeframes.monthly.current;
 
   // Add event listener to the daily button
   dailyStats.addEventListener('click', () => {
