@@ -29,6 +29,12 @@ const user = [
 // Creating the card
 const card = document.createElement('div');
 card.classList = 'play-card';
+
 const showImg = document.createElement('div');
 showImg.classList = 'image-show';
-showImg.scr = './images/icon-work.svg" alt="work';
+const img = './images/icon-work.svg" alt="work';
+img.classList = '';
+showImg.append(img);
+
+
+displaySection.append(card);
