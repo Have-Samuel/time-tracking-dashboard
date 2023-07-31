@@ -36,7 +36,8 @@ const imgOne = document.createElement('image');
 imgOne.src = './images/icon-work.svg" alt="work';
 showImg.appendChild(imgOne);
 
-const contDiv = document.querySelector('.content');
+const contDiv = document.createElement('div');
+contDiv.className = 'content';
 
 const workHours = document.querySelector('.work-hours');
 const title = document.createElement('h2');
