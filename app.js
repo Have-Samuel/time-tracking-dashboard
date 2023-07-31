@@ -37,6 +37,10 @@ img.classList = '';
 showImg.append(img);
 
 const contDiv = document.querySelector('.content');
+const workHours = document.querySelector('.work-hours');
+const title = document.querySelector('h2');
+title.textContent = 'Work';
+workHours.append(title);
 
 
 displaySection.append(card);
