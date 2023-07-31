@@ -3,11 +3,19 @@ const dailyStats = document.querySelector('.daily-data');
 const weeklyStats = document.querySelector('.weekly-data');
 const monthlyStats = document.querySelector('.monthly-data');
 
+// Colors
+const workColor = '#d96c47';
+const playColor = '#56c2e6';
+const studyColor = '#c06c84';
+const exerciseColor = '#51b6c8';
+const socialColor = '#498fc1';
+const selfCareColor = '#d96ed4';
+
 const user = [
   {
     title: 'Work',
     featuredImage: './images/icon-work.svg',
-    backgroundColor: '#d96c47',
+    workColor,
     timeframes: {
       daily: {
         current: 5,
@@ -26,7 +34,7 @@ const user = [
   {
     title: 'Play',
     featuredImage: './images/icon-play.svg',
-    backgroundColor: '#56c2e6',
+    playColor,
     timeframes: {
       daily: {
         current: 1,
@@ -45,7 +53,7 @@ const user = [
   {
     title: 'Study',
     featuredImage: './images/icon-study.svg',
-    backgroundColor: '#c06c84',
+    studyColor,
     timeframes: {
       daily: {
         current: 0,
@@ -64,7 +72,7 @@ const user = [
   {
     title: 'Exercise',
     featuredImage: './images/icon-exercise.svg',
-    backgroundColor: '#51b6c8',
+    exerciseColor,
     timeframes: {
       daily: {
         current: 1,
@@ -83,7 +91,7 @@ const user = [
   {
     title: 'Social',
     featuredImage: './images/icon-social.svg',
-    backgroundColor: '#498fc1',
+    socialColor,
     timeframes: {
       daily: {
         current: 1,
@@ -102,7 +110,7 @@ const user = [
   {
     title: 'Self Care',
     featuredImage: './images/icon-self-care.svg',
-    backgroundColor: '#d96ed4',
+    selfCareColor,
     timeframes: {
       daily: {
         current: 0,
@@ -120,9 +128,12 @@ const user = [
   },
 ];
 
+console.log(selfCareColor);
+
 function cardSection(card) {
   return `
   <div class="play-card">
+  <div class="color">${card.backgroundColor}</div>
     <div class="image-show">
       <img class="adjust" src=${card.featuredImage} alt="work">
     </div>
