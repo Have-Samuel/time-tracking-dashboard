@@ -28,10 +28,10 @@ const user = [
 
 // Creating the card
 const card = document.createElement('div');
-card.classList = 'play-card';
+card.className = 'play-card';
 
 const showImg = document.createElement('div');
-showImg.classList = 'image-show';
+showImg.className = 'image-show';
 const imgOne = document.createElement('image');
 imgOne.src = './images/icon-work.svg" alt="work';
 showImg.appendChild(imgOne);
@@ -42,25 +42,26 @@ const workHours = document.querySelector('.work-hours');
 const title = document.createElement('h2');
 title.innerHTML = 'Work';
 const hours = document.createElement('div');
-hours.classList = 'hours';
+hours.className = 'hours';
 const spanDiv = document.createElement('span');
-spanDiv.classList = 'no-card';
+spanDiv.className = 'no-card';
 spanDiv.innerHTML = '32hrs';
 hours.appendChild(spanDiv);
 workHours.append(title, hours);
 
 const threeDots = document.createElement('div');
-threeDots.classList = 'three-dots';
+threeDots.className = 'three-dots';
 const dotImg = document.createElement('div');
-dotImg.classList = 'dot-img';
+dotImg.className = 'dot';
 const imgTwo = document.createElement('image');
 imgTwo.src = './images/icon-ellipsis.svg';
 dotImg.append(imgTwo);
 
-const prevUpDate = document.querySelector('.changer');
+const prevUpDate = document.createElement('div');
+prevUpDate.className = 'changer';
 const spanDis = document.createElement('span');
 spanDis.textContent = 'last Week - 36hrs';
-spanDis.classList = 'week';
+spanDis.className = 'week';
 prevUpDate.appendChild(spanDis);
 
 threeDots.append(dotImg, prevUpDate);
