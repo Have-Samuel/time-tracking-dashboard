@@ -1,4 +1,5 @@
 // Fetching daily data from db.json
+const displaySection = document.querySelector('#card-section');
 const dailyStats = document.querySelector('.daily-data');
 const weeklyStats = document.querySelector('.weekly-data');
 const monthlyStats = document.querySelector('.monthly-data');
@@ -24,23 +25,6 @@ const user = [
     },
   },
 ];
-user.forEach((user) => {
-  dailyStats.addEventListener('click', () => {
-    console.log(user.timeframes.daily.current);
-    console.log(user.timeframes.daily.previous);
-    cardNo.textContent = `${user.timeframes.daily.current}hrs`;
-    prevData.textContent = `Yesterday - ${user.timeframes.daily.previous}hrs`;
-  });
-  weeklyStats.addEventListener('click', () => {
-    console.log(user.timeframes.weekly.current);
-    console.log(user.timeframes.weekly.previous);
-    cardNo.textContent = `${user.timeframes.weekly.current}hrs`;
-    prevData.textContent = `Yesterday - ${user.timeframes.weekly.previous}hrs`;
-  });
-  monthlyStats.addEventListener('click', () => {
-    console.log(user.timeframes.monthly.current);
-    console.log(user.timeframes.monthly.previous);
-    cardNo.textContent = `${user.timeframes.monthly.current}hrs`;
-    prevData.textContent = `Yesterday - ${user.timeframes.monthly.previous}hrs`;
-  });
-});
+
+// Creating the card
+
