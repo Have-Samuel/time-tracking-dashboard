@@ -28,3 +28,5 @@ const user = [
 
 // Creating the card
 const card = document.createElement('div');
+card.classList = 'play-card';
+
