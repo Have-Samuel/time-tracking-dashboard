@@ -7,6 +7,7 @@ const user = [
   {
     title: 'Work',
     featuredImage: './images/icon-work.svg',
+    backgroundColor: '#d96c47',
     timeframes: {
       daily: {
         current: 5,
@@ -25,6 +26,7 @@ const user = [
   {
     title: 'Play',
     featuredImage: './images/icon-play.svg',
+    backgroundColor: '#56c2e6',
     timeframes: {
       daily: {
         current: 1,
@@ -43,6 +45,7 @@ const user = [
   {
     title: 'Study',
     featuredImage: './images/icon-study.svg',
+    backgroundColor: '#c06c84',
     timeframes: {
       daily: {
         current: 0,
@@ -61,6 +64,7 @@ const user = [
   {
     title: 'Exercise',
     featuredImage: './images/icon-exercise.svg',
+    backgroundColor: '#51b6c8',
     timeframes: {
       daily: {
         current: 1,
@@ -79,6 +83,7 @@ const user = [
   {
     title: 'Social',
     featuredImage: './images/icon-social.svg',
+    backgroundColor: '#498fc1',
     timeframes: {
       daily: {
         current: 1,
@@ -97,6 +102,7 @@ const user = [
   {
     title: 'Self Care',
     featuredImage: './images/icon-self-care.svg',
+    backgroundColor: '#d96ed4',
     timeframes: {
       daily: {
         current: 0,
@@ -118,7 +124,7 @@ function cardSection(card) {
   return `
   <div class="play-card">
     <div class="image-show">
-      <img src=${card.featuredImage} alt="work">
+      <img class="adjust" src=${card.featuredImage} alt="work">
     </div>
     <div class="content">
       <div class="work-hours">
