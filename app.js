@@ -46,4 +46,7 @@ const spanDiv = document.querySelector('.no-card');
 hours.append(spanDiv);
 workHours.append(title, hours);
 
+const threeDots = document.querySelector('.three-dots');
+
+
 displaySection.append(card);
