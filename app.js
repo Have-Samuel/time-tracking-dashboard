@@ -41,9 +41,11 @@ const contDiv = document.querySelector('.content');
 const workHours = document.querySelector('.work-hours');
 const title = document.createElement('h2');
 title.innerHTML = 'Work';
-const hours = document.querySelector('.hours');
+const hours = document.querySelector('div');
+hours.classList = 'hours';
 const spanDiv = document.createElement('span');
 spanDiv.classList = 'no-card';
+spanDiv.innerHTML = '32hrs';
 hours.appendChild(spanDiv);
 workHours.append(title, hours);
 
