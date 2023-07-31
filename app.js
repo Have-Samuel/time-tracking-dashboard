@@ -6,6 +6,7 @@ const monthlyStats = document.querySelector('.monthly-data');
 const user = [
   {
     title: 'Work',
+    featuredImage: './images/icon-work.svg',
     timeframes: {
       daily: {
         current: 5,
@@ -23,6 +24,7 @@ const user = [
   },
   {
     title: 'Play',
+    featuredImage: './images/icon-play.svg',
     timeframes: {
       daily: {
         current: 1,
@@ -40,6 +42,7 @@ const user = [
   },
   {
     title: 'Study',
+    featuredImage: './images/icon-study.svg',
     timeframes: {
       daily: {
         current: 0,
@@ -57,6 +60,7 @@ const user = [
   },
   {
     title: 'Exercise',
+    featuredImage: './images/icon-exercise.svg',
     timeframes: {
       daily: {
         current: 1,
@@ -74,6 +78,7 @@ const user = [
   },
   {
     title: 'Social',
+    featuredImage: './images/icon-social.svg',
     timeframes: {
       daily: {
         current: 1,
@@ -91,6 +96,7 @@ const user = [
   },
   {
     title: 'Self Care',
+    featuredImage: './images/icon-self-care.svg',
     timeframes: {
       daily: {
         current: 0,
@@ -108,63 +114,17 @@ const user = [
   },
 ];
 
-// Creating the card
-// const card = document.createElement('div');
-// card.className = 'play-card';
-
-// const showImg = document.createElement('div');
-// showImg.className = 'image-show';
-// const imgOne = document.createElement('img');
-// imgOne.src = './images/icon-work.svg';
-// showImg.appendChild(imgOne);
-
-// const contDiv = document.createElement('div');
-// contDiv.className = 'content';
-
-// const workHours = document.createElement('div');
-// workHours.className = 'work-hours';
-// const title = document.createElement('h2');
-// title.innerHTML = 'Work';
-// const hours = document.createElement('div');
-// hours.className = 'hours';
-// const spanDiv = document.createElement('span');
-// spanDiv.className = 'no-card';
-// spanDiv.innerHTML = '32hrs';
-// hours.appendChild(spanDiv);
-// workHours.append(title, hours);
-
-// const threeDots = document.createElement('div');
-// threeDots.className = 'three-dots';
-// const dotImg = document.createElement('div');
-// dotImg.className = 'dot';
-// const imgTwo = document.createElement('img');
-// imgTwo.src = './images/icon-ellipsis.svg';
-// dotImg.append(imgTwo);
-
-// const prevUpDate = document.createElement('div');
-// prevUpDate.className = 'changer';
-// const spanDis = document.createElement('span');
-// spanDis.textContent = 'last Week - 36hrs';
-// spanDis.className = 'week';
-// prevUpDate.appendChild(spanDis);
-
-// threeDots.append(dotImg, prevUpDate);
-
-// contDiv.append(workHours, threeDots);
-// card.append(showImg, contDiv);
-// displaySection.append(card);
-
-function cardSection(work) {
+function cardSection(card) {
   return `
   <div class="play-card">
     <div class="image-show">
-      <img src="./images/icon-work.svg" alt="work">
+      <img src=${card.featuredImage} alt="work">
     </div>
     <div class="content">
       <div class="work-hours">
-        <h2>${work.title}</h2>
+        <h2>${card.title}</h2>
         <div class="hours">
-          <span class="no-card">${work.timeframes.weekly.current}hrs</span>
+          <span class="no-card">${card.timeframes.weekly.current}hrs</span>
         </div>
       </div>
       <div class="three-dots">
@@ -172,7 +132,7 @@ function cardSection(work) {
           <img src="./images/icon-ellipsis.svg" alt="ellipsis">
         </div>
         <div class="changer">
-          <span class="week">Last Week - ${work.timeframes.weekly.previous}hrs</span>
+          <span class="week">Last Week - ${card.timeframes.weekly.previous}hrs</span>
         </div>
       </div>
     </div>
@@ -181,16 +141,10 @@ function cardSection(work) {
 }
 
 const allCards = document.querySelector('#card-section');
-allCards.innerHTML = user.map(cardSection).join('');
+allCards.innerHTML = user.map(cardSection);
 
 // Lopp though the data array
 user.forEach((work) => {
-  const cardNo = document.querySelector('.no-card');
-  const prevData = document.querySelector('.week');
-  // const daily = work.timeframes.daily.current;
-  // const weekly = work.timeframes.weekly.current;
-  // const monthly = work.timeframes.monthly.current;
-
   // Add event listener to the daily button
   dailyStats.addEventListener('click', () => {
     const daily = work.timeframes.daily.current;
@@ -221,3 +175,4 @@ user.forEach((work) => {
     prev.textContent = `Last Month - ${prevMonthly}hrs`;
   });
 });
+
