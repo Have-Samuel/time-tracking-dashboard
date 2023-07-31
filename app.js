@@ -1,14 +1,21 @@
 // Fetching daily data from db.json
-const displaySection = document.querySelector('#card-section');
 const dailyStats = document.querySelector('.daily-data');
 const weeklyStats = document.querySelector('.weekly-data');
 const monthlyStats = document.querySelector('.monthly-data');
-const cardNo = document.querySelector('.no-card');
-const prevData = document.querySelector('.week');
+
+// Colors
+const workColor = '#d96c47';
+const playColor = '#56c2e6';
+const studyColor = '#c06c84';
+const exerciseColor = '#51b6c8';
+const socialColor = '#498fc1';
+const selfCareColor = '#d96ed4';
 
 const user = [
   {
     title: 'Work',
+    featuredImage: './images/icon-work.svg',
+    workColor,
     timeframes: {
       daily: {
         current: 5,
@@ -24,48 +31,164 @@ const user = [
       },
     },
   },
+  {
+    title: 'Play',
+    featuredImage: './images/icon-play.svg',
+    playColor,
+    timeframes: {
+      daily: {
+        current: 1,
+        previous: 2,
+      },
+      weekly: {
+        current: 10,
+        previous: 8,
+      },
+      monthly: {
+        current: 23,
+        previous: 29,
+      },
+    },
+  },
+  {
+    title: 'Study',
+    featuredImage: './images/icon-study.svg',
+    studyColor,
+    timeframes: {
+      daily: {
+        current: 0,
+        previous: 1,
+      },
+      weekly: {
+        current: 4,
+        previous: 7,
+      },
+      monthly: {
+        current: 13,
+        previous: 19,
+      },
+    },
+  },
+  {
+    title: 'Exercise',
+    featuredImage: './images/icon-exercise.svg',
+    exerciseColor,
+    timeframes: {
+      daily: {
+        current: 1,
+        previous: 1,
+      },
+      weekly: {
+        current: 4,
+        previous: 5,
+      },
+      monthly: {
+        current: 11,
+        previous: 18,
+      },
+    },
+  },
+  {
+    title: 'Social',
+    featuredImage: './images/icon-social.svg',
+    socialColor,
+    timeframes: {
+      daily: {
+        current: 1,
+        previous: 3,
+      },
+      weekly: {
+        current: 5,
+        previous: 10,
+      },
+      monthly: {
+        current: 21,
+        previous: 23,
+      },
+    },
+  },
+  {
+    title: 'Self Care',
+    featuredImage: './images/icon-self-care.svg',
+    selfCareColor,
+    timeframes: {
+      daily: {
+        current: 0,
+        previous: 1,
+      },
+      weekly: {
+        current: 2,
+        previous: 2,
+      },
+      monthly: {
+        current: 7,
+        previous: 11,
+      },
+    },
+  },
 ];
 
-// Creating the card
-const card = document.createElement('div');
-card.className = 'play-card';
+console.log(selfCareColor);
 
-const showImg = document.createElement('div');
-showImg.className = 'image-show';
-const imgOne = document.createElement('image');
-imgOne.src = './images/icon-work.svg" alt="work';
-showImg.appendChild(imgOne);
+function cardSection(card) {
+  return `
+  <div class="play-card">
+  <div class="color">${card.backgroundColor}</div>
+    <div class="image-show">
+      <img class="adjust" src=${card.featuredImage} alt="work">
+    </div>
+    <div class="content">
+      <div class="work-hours">
+        <h2>${card.title}</h2>
+        <div class="hours">
+          <span class="no-card">${card.timeframes.weekly.current}hrs</span>
+        </div>
+      </div>
+      <div class="three-dots">
+        <div class="dot">
+          <img src="./images/icon-ellipsis.svg" alt="ellipsis">
+        </div>
+        <div class="changer">
+          <span class="week">Last Week - ${card.timeframes.weekly.previous}hrs</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  `;
+}
 
-const contDiv = document.querySelector('.content');
+const allCards = document.querySelector('#card-section');
+allCards.innerHTML = user.map(cardSection);
 
-const workHours = document.querySelector('.work-hours');
-const title = document.createElement('h2');
-title.innerHTML = 'Work';
-const hours = document.createElement('div');
-hours.className = 'hours';
-const spanDiv = document.createElement('span');
-spanDiv.className = 'no-card';
-spanDiv.innerHTML = '32hrs';
-hours.appendChild(spanDiv);
-workHours.append(title, hours);
+// Lopp though the data array
+user.forEach((work) => {
+  // Add event listener to the daily button
+  dailyStats.addEventListener('click', () => {
+    const daily = work.timeframes.daily.current;
+    const prevDaily = work.timeframes.daily.previous;
+    const noCard = document.querySelector('.no-card');
+    const prev = document.querySelector('.week');
+    noCard.textContent = `${daily}hrs`;
+    prev.textContent = `Yesterday - ${prevDaily}hrs`;
+  });
 
-const threeDots = document.createElement('div');
-threeDots.className = 'three-dots';
-const dotImg = document.createElement('div');
-dotImg.className = 'dot';
-const imgTwo = document.createElement('image');
-imgTwo.src = './images/icon-ellipsis.svg';
-dotImg.append(imgTwo);
+  // Add event listener to the weekly button
+  weeklyStats.addEventListener('click', () => {
+    const weekly = work.timeframes.weekly.current;
+    const prevWeekly = work.timeframes.weekly.previous;
+    const noCard = document.querySelector('.no-card');
+    const prev = document.querySelector('.week');
+    noCard.textContent = `${weekly}hrs`;
+    prev.textContent = `Last Week - ${prevWeekly}hrs`;
+  });
 
-const prevUpDate = document.createElement('div');
-prevUpDate.className = 'changer';
-const spanDis = document.createElement('span');
-spanDis.textContent = 'last Week - 36hrs';
-spanDis.className = 'week';
-prevUpDate.appendChild(spanDis);
-
-threeDots.append(dotImg, prevUpDate);
-
-contDiv.append(workHours, threeDots);
-card.append(showImg, contDiv);
-displaySection.append(card);
+  // Add event listener to the monthly button
+  monthlyStats.addEventListener('click', () => {
+    const monthly = work.timeframes.monthly.current;
+    const prevMonthly = work.timeframes.monthly.previous;
+    const noCard = document.querySelector('.no-card');
+    const prev = document.querySelector('.week');
+    noCard.textContent = `${monthly}hrs`;
+    prev.textContent = `Last Month - ${prevMonthly}hrs`;
+  });
+});
