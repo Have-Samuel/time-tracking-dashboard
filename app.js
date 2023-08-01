@@ -158,11 +158,11 @@ const allCards = document.querySelector('#card-section');
 allCards.innerHTML = user.map(cardSection);
 
 // Lopp though the data array
-user.forEach((title) => {
+user.forEach((card) => {
   // Add event listener to the daily button
   dailyStats.addEventListener('click', () => {
-    const daily = work.timeframes.daily.current;
-    const prevDaily = work.timeframes.daily.previous;
+    const daily = card.timeframes.daily.current;
+    const prevDaily = card.timeframes.daily.previous;
     const noCard = document.querySelector('.no-card');
     const prev = document.querySelector('.week');
     noCard.textContent = `${daily}hrs`;
@@ -171,8 +171,8 @@ user.forEach((title) => {
 
   // Add event listener to the weekly button
   weeklyStats.addEventListener('click', () => {
-    const weekly = work.timeframes.weekly.current;
-    const prevWeekly = work.timeframes.weekly.previous;
+    const weekly = card.timeframes.weekly.current;
+    const prevWeekly = card.timeframes.weekly.previous;
     const noCard = document.querySelector('.no-card');
     const prev = document.querySelector('.week');
     noCard.textContent = `${weekly}hrs`;
@@ -181,8 +181,8 @@ user.forEach((title) => {
 
   // Add event listener to the monthly button
   monthlyStats.addEventListener('click', () => {
-    const monthly = work.timeframes.monthly.current;
-    const prevMonthly = work.timeframes.monthly.previous;
+    const monthly = card.timeframes.monthly.current;
+    const prevMonthly = card.timeframes.monthly.previous;
     const noCard = document.querySelector('.no-card');
     const prev = document.querySelector('.week');
     noCard.textContent = `${monthly}hrs`;
