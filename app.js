@@ -157,7 +157,7 @@ function cardSection(card) {
 const allCards = document.querySelector('#card-section');
 allCards.innerHTML = user.map(cardSection);
 
-// Lopp though the data array
+// Loop though the data array
 user.forEach((card) => {
   // Add event listener to the daily button
   dailyStats.addEventListener('click', () => {
