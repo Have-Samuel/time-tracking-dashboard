@@ -122,10 +122,6 @@ body {
 .play-card {
   background-color: #d96c47;
   border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   margin-top: 1rem;
 }
 
