@@ -159,7 +159,7 @@ allCards.innerHTML = user.map(cardSection);
 
 // Loop though the data array
 user.forEach((card) => {
-  // Add event listener to the daily button
+  // Add event listener to the daily stat
   dailyStats.addEventListener('click', () => {
     const daily = card.timeframes.daily.current;
     const prevDaily = card.timeframes.daily.previous;
@@ -169,7 +169,7 @@ user.forEach((card) => {
     prev.textContent = `Yesterday - ${prevDaily}hrs`;
   });
 
-  // Add event listener to the weekly button
+  // Add event listener to the weekly stat
   weeklyStats.addEventListener('click', () => {
     const weekly = card.timeframes.weekly.current;
     const prevWeekly = card.timeframes.weekly.previous;
@@ -179,7 +179,7 @@ user.forEach((card) => {
     prev.textContent = `Last Week - ${prevWeekly}hrs`;
   });
 
-  // Add event listener to the monthly button
+  // Add event listener to the monthly stat
   monthlyStats.addEventListener('click', () => {
     const monthly = card.timeframes.monthly.current;
     const prevMonthly = card.timeframes.monthly.previous;
