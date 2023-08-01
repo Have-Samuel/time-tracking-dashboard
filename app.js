@@ -128,12 +128,9 @@ const user = [
   },
 ];
 
-console.log(selfCareColor);
-
 function cardSection(card) {
   return `
   <div class="play-card">
-  <div class="color">${card.backgroundColor}</div>
     <div class="image-show">
       <img class="adjust" src=${card.featuredImage} alt="work">
     </div>
