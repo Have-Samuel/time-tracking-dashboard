@@ -158,7 +158,7 @@ const allCards = document.querySelector('#card-section');
 allCards.innerHTML = user.map(cardSection);
 
 // Lopp though the data array
-user.forEach((work) => {
+user.forEach((title) => {
   // Add event listener to the daily button
   dailyStats.addEventListener('click', () => {
     const daily = work.timeframes.daily.current;
