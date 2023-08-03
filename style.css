@@ -315,7 +315,7 @@ body {
     position: absolute;
     top: 6.3rem;
     left: -7rem;
-    margin-left: 0;
+    margin-left: 4rem;
     margin-right: 0;
   }
 
@@ -344,7 +344,7 @@ body {
   }
 
   .work-hours .hours span {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 300;
   }
 
