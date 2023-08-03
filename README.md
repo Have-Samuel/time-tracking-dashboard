@@ -60,5 +60,17 @@ Users should be able to:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page]().
+Feel free to check the [issues page](https://github.com/Have-Samuel/time-tracking-dashboard/issues).
 
+## Show your support
+
+Give a ⭐️ if you like this project!
+## Acknowledgments
+
+- 🎉 Thanks to Frontend Mentor 
+- 👋 Thumbs Up to [@Trekab](https://github.com/trekab)
+- etc
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
