@@ -36,7 +36,7 @@ Users should be able to:
 ### Links
 
 - [Github Link](https://github.com/Have-Samuel/time-tracking-dashboard)
-- Live Site URL: [Live Link]()
+- Live Site URL: [Live Link](https://have-samuel.github.io/time-tracking-dashboard/)
 
 ## My process
 
