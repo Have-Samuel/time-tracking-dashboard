@@ -205,7 +205,7 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     position: absolute;
-    top: 11rem;
+    top: 5rem;
     left: 17.5rem;
     margin-left: 1.5rem;
     margin-top: 0;
@@ -215,7 +215,7 @@ body {
     width: 255px;
     height: 315px;
     position: absolute;
-    top: 12rem;
+    top: 8rem;
     left: 1.5rem;
   }
 
@@ -323,7 +323,7 @@ body {
       grid-template-columns: 1fr 1fr 1fr;
       gap: 1rem;
       position: absolute;
-      top: 16rem;
+      top: 12rem;
       left: 20rem;
       margin-left: 1.5rem;
       margin-top: 0;
@@ -333,7 +333,7 @@ body {
       width: 255px;
       height: 280px;
       position: absolute;
-      top: 12rem;
+      top: 8rem;
       left: 4.5rem;
     }
 
