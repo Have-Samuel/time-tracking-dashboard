@@ -155,7 +155,7 @@ function cardSection(card) {
 }
 
 const allCards = document.querySelector('#card-section');
-allCards.innerHTML = user.map(cardSection);
+allCards.innerHTML = ;
 
 // Loop though the data array
 user.forEach((card) => {
