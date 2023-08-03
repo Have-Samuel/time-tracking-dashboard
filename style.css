@@ -347,9 +347,14 @@ body {
       text-align: center;
     }
 
-    .person__name h1 {
-      font-size: 23px;
+    .person__name span {
+      font-size: 1rem;
       font-weight: 300;
+    }
+
+    .person__name h1 {
+      font-size: 1.5rem;
+      font-weight: 400;
       letter-spacing: 0.1rem;
     }
 
