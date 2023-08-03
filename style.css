@@ -203,8 +203,8 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     position: absolute;
-    top: 12rem;
-    left: 23rem;
+    top: 9rem;
+    left: 16.5rem;
     margin-left: 1.5rem;
     margin-top: 0;
   }
@@ -213,15 +213,13 @@ body {
     width: 255px;
     height: 315px;
     position: absolute;
-    top: 9rem;
+    top: 12rem;
     left: 1rem;
     /* margin-left: 1rem; */
   }
 
   .content-inner {
     flex-direction: column;
-    /* margin-right: 1.5rem; */
-    /* margin-bottom: 6rem; */
     justify-content: center;
     align-items: center;
   }
@@ -266,7 +264,7 @@ body {
 
   .image-show {
     width: 255px;
-    height: 28px;
+    height: 29px;
     position: relative;
   }
 
