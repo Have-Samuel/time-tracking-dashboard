@@ -178,8 +178,9 @@ body {
   margin-left: 4.2rem;
 }
 
-.color {
-  color: antiquewhite;
+.da-we-mo span:focus,
+.da-we-mo span:hover {
+  color: aliceblue;
 }
 
 @media (min-width: 768px) {
