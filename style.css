@@ -185,7 +185,7 @@ body {
 
 @media (min-width: 786px) {
   .container {
-    width: 1440px;
+    width: 786px;
     height: 98vh;
     background-color: #0e1323;
     display: flex;
@@ -196,7 +196,7 @@ body {
 
   .play-card {
     margin-top: 0;
-    width: 200px;
+    width: 220px;
     height: 187px;
   }
 
@@ -205,8 +205,8 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     position: absolute;
-    top: 9rem;
-    left: 16.5rem;
+    top: 11rem;
+    left: 17.5rem;
     margin-left: 1.5rem;
     margin-top: 0;
   }
@@ -216,7 +216,7 @@ body {
     height: 315px;
     position: absolute;
     top: 12rem;
-    left: 1rem;
+    left: 1.5rem;
     /* margin-left: 1rem; */
   }
 
@@ -270,18 +270,26 @@ body {
     position: relative;
   }
 
-  img .adjust {
+  .image-show img {
+    /* filter: invert(10%);
+    position: absolute; */
+    top: -10px;
+    right: 68px;
+    /* clip: rect(10px, 327px, 54px, 0); */
+  }
+
+  /* img .adjust {
     border: 2px solid red;
     filter: invert(18%);
     position: absolute;
     top: -10px;
     right: 15px;
     clip: rect(10px, 327px, 54px, 0);
-  }
+  } */
 
   .content {
     display: flex;
-    width: 200px;
+    width: 220px;
     height: 143px;
     gap: 1rem;
   }
