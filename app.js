@@ -130,7 +130,7 @@ const user = [
 
 function cardSection(card) {
   return `
-  <div class="play-card">
+  <div class="play-card color">
     <div class="image-show">
       <img class="adjust" src=${card.featuredImage} alt="work">
     </div>
@@ -188,4 +188,17 @@ for (let i = 0; i < user.length; i += 1) {
     noCard[i].textContent = `${monthly}hrs`;
     prev[i].textContent = `Last Month - ${prevMonthly}hrs`;
   });
+}
+
+// Loop through the data array for background color
+for (let i = 0; i < user.length; i += 1) {
+  const card = document.querySelectorAll('.play-card');
+  card[i].style.backgroundColor = `${
+    user[i].workColor
+    || user[i].playColor
+    || user[i].studyColor
+    || user[i].exerciseColor
+    || user[i].socialColor
+    || user[i].selfCareColor
+  }`;
 }
