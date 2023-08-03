@@ -352,4 +352,8 @@ body {
     margin-left: 3rem;
     margin-bottom: 6rem;
   }
+
+  @media (min-width: 1200px) {
+    
+  }
 }
