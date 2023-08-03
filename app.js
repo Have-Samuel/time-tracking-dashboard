@@ -155,37 +155,37 @@ function cardSection(card) {
 }
 
 const allCards = document.querySelector('#card-section');
-allCards.innerHTML = ;
+allCards.innerHTML = `${user.map(cardSection).join('')}`;
 
-// Loop though the data array
-user.forEach((card) => {
+// Loop through the data array
+for (let i = 0; i < user.length; i += 1) {
   // Add event listener to the daily stat
   dailyStats.addEventListener('click', () => {
-    const daily = card.timeframes.daily.current;
-    const prevDaily = card.timeframes.daily.previous;
-    const noCard = document.querySelector('.no-card');
-    const prev = document.querySelector('.week');
-    noCard.textContent = `${daily}hrs`;
-    prev.textContent = `Yesterday - ${prevDaily}hrs`;
+    const daily = user[i].timeframes.daily.current;
+    const prevDaily = user[i].timeframes.daily.previous;
+    const noCard = document.querySelectorAll('.no-card');
+    const prev = document.querySelectorAll('.week');
+    noCard[i].textContent = `${daily}hrs`;
+    prev[i].textContent = `Yesterday - ${prevDaily}hrs`;
   });
 
   // Add event listener to the weekly stat
   weeklyStats.addEventListener('click', () => {
-    const weekly = card.timeframes.weekly.current;
-    const prevWeekly = card.timeframes.weekly.previous;
-    const noCard = document.querySelector('.no-card');
-    const prev = document.querySelector('.week');
-    noCard.textContent = `${weekly}hrs`;
-    prev.textContent = `Last Week - ${prevWeekly}hrs`;
+    const weekly = user[i].timeframes.weekly.current;
+    const prevWeekly = user[i].timeframes.weekly.previous;
+    const noCard = document.querySelectorAll('.no-card');
+    const prev = document.querySelectorAll('.week');
+    noCard[i].textContent = `${weekly}hrs`;
+    prev[i].textContent = `Last Week - ${prevWeekly}hrs`;
   });
 
   // Add event listener to the monthly stat
   monthlyStats.addEventListener('click', () => {
-    const monthly = card.timeframes.monthly.current;
-    const prevMonthly = card.timeframes.monthly.previous;
-    const noCard = document.querySelector('.no-card');
-    const prev = document.querySelector('.week');
-    noCard.textContent = `${monthly}hrs`;
-    prev.textContent = `Last Month - ${prevMonthly}hrs`;
+    const monthly = user[i].timeframes.monthly.current;
+    const prevMonthly = user[i].timeframes.monthly.previous;
+    const noCard = document.querySelectorAll('.no-card');
+    const prev = document.querySelectorAll('.week');
+    noCard[i].textContent = `${monthly}hrs`;
+    prev[i].textContent = `Last Month - ${prevMonthly}hrs`;
   });
-});
+}
