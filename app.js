@@ -1,9 +1,7 @@
-// Fetching daily data from db.json
 const dailyStats = document.querySelector('.daily-data');
 const weeklyStats = document.querySelector('.weekly-data');
 const monthlyStats = document.querySelector('.monthly-data');
 
-// Colors
 const workColor = '#d96c47';
 const playColor = '#56c2e6';
 const studyColor = '#c06c84';
@@ -159,7 +157,6 @@ allCards.innerHTML = `${user.map(cardSection).join('')}`;
 
 // Loop through the data array
 for (let i = 0; i < user.length; i += 1) {
-  // Add event listener to the daily stat
   dailyStats.addEventListener('click', () => {
     const daily = user[i].timeframes.daily.current;
     const prevDaily = user[i].timeframes.daily.previous;
@@ -169,7 +166,6 @@ for (let i = 0; i < user.length; i += 1) {
     prev[i].textContent = `Yesterday - ${prevDaily}hrs`;
   });
 
-  // Add event listener to the weekly stat
   weeklyStats.addEventListener('click', () => {
     const weekly = user[i].timeframes.weekly.current;
     const prevWeekly = user[i].timeframes.weekly.previous;
@@ -179,7 +175,6 @@ for (let i = 0; i < user.length; i += 1) {
     prev[i].textContent = `Last Week - ${prevWeekly}hrs`;
   });
 
-  // Add event listener to the monthly stat
   monthlyStats.addEventListener('click', () => {
     const monthly = user[i].timeframes.monthly.current;
     const prevMonthly = user[i].timeframes.monthly.previous;
@@ -190,7 +185,6 @@ for (let i = 0; i < user.length; i += 1) {
   });
 }
 
-// Loop through the data array for background color
 for (let i = 0; i < user.length; i += 1) {
   const card = document.querySelectorAll('.play-card');
   card[i].style.backgroundColor = `${
