@@ -459,6 +459,10 @@ body {
       margin-left: 1rem;
     }
 
+    .three-dots span {
+      top: 6.7rem;
+    }
+
     .work-hours .hours span {
       font-size: 3rem;
       font-weight: 300;
@@ -469,8 +473,5 @@ body {
       margin-left: 2.5rem;
       margin-bottom: 6rem;
     }
-
-    .three-dots span {
-      top: 6.7rem;
   }
 }
