@@ -183,7 +183,7 @@ body {
   color: aliceblue;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 786px) {
   .container {
     width: 1440px;
     height: 98vh;
@@ -200,7 +200,7 @@ body {
 
   .desktop-data {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
     position: absolute;
     top: 12rem;
@@ -214,26 +214,29 @@ body {
     height: 315px;
     position: absolute;
     top: 9rem;
-    left: 6rem;
-    margin-left: 1.5rem;
+    left: 1rem;
+    /* margin-left: 1rem; */
   }
 
   .content-inner {
     flex-direction: column;
-    margin-right: 7rem;
-    margin-bottom: 6rem;
+    /* margin-right: 1.5rem; */
+    /* margin-bottom: 6rem; */
+    justify-content: center;
+    align-items: center;
   }
 
   .person__name {
-    width: 139px;
+    /* width: 139px; */
+    text-align: center;
   }
 
   .person__name span {
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
   }
 
   .person__name h1 {
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
     font-size: 23px;
     font-weight: 300;
     letter-spacing: 0.1rem;
