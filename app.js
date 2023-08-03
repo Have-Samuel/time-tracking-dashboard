@@ -196,3 +196,10 @@ for (let i = 0; i < user.length; i += 1) {
     || user[i].selfCareColor
   }`;
 }
+
+// When you click the statsthe effect should remain
+const statEff = document.querySelector('.color');
+
+statEff.addEventListener('click', () => {
+  statEff.classList.toggle('color');
+});
