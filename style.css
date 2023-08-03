@@ -194,12 +194,16 @@ body {
     position: relative;
   }
 
+  .play-card {
+    margin-top: 0;
+  }
+
   .desktop-data {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
     position: absolute;
-    top: 13rem;
+    top: 12rem;
     left: 23rem;
     margin-left: 1.5rem;
     margin-top: 0;
